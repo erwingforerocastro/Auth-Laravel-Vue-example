@@ -1,23 +1,43 @@
 <div align="center">
-  <a target="_blank" href="https://www.lighthouse-php.com">
-    <img src="./logo.png" alt=lighthouse-logo" width="150" height="150">
+  <a target="_blank" href="https://laravel.com/">
+    <img src="./logo.svg" alt=laravel" width="150" height="150">
   </a>
 </div>
 
 <div align="center">
 
-# Auth-Laravel-Vue-example
+# Simple project JFamily
 
-**Ejemplo simple de autenticacion con laravel, graphQL y vue.js**
+**Ejemplo simple de laravel para el manejo de usuarios y sus familias**
 
 Erwing FC @ 2019
 </div>
 
-# lighthouse-laravel
+# Laravel
 
 ## Project setup
 ```
 composer install
+```
+
+### migrate databases
+```
+php artisan migrate
+```
+
+### Run seeds
+```
+php artisan db:seed
+```
+
+## Factory users (run before `php artisan tinker`)
+```
+$users = factory(App\User::class, 3)->make();
+```
+
+### Run 
+```
+php artisan test
 ```
 
 ### activate server
@@ -25,37 +45,8 @@ composer install
 php artisan serve
 ```
 
+
 ### References
 See [Laravel installation](https://laravel.com/docs/5.7).
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# vue-apollo-auth
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### References
-See [Configuration Reference](https://cli.vuejs.org/config/).
